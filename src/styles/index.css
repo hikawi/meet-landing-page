@@ -1,0 +1,42 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer utilities {
+    .text-preset-1 {
+        font-size: 64px;
+        font-weight: 900;
+        line-height: 110%;
+        color: var(--color-slate-900, #28283D);
+    }
+
+    .text-preset-2 {
+        font-size: 40px;
+        font-weight: 900;
+        line-height: 110%;
+        color: var(--color-slate-900, #28283D);
+    }
+
+    .text-preset-3 {
+        font-size: 16px;
+        font-weight: 900;
+        line-height: 110%;
+        text-transform: uppercase;
+        letter-spacing: 4px;
+        color: var(--color-cyan-600, #4D96A9);
+    }
+
+    .text-preset-4 {
+        font-size: 18px;
+        font-weight: 500;
+        line-height: 150%;
+        color: var(--color-slate-900, #28283D);
+    }
+
+    .text-preset-5 {
+        font-size: 16px;
+        font-weight: 900;
+        line-height: 150%;
+        color: var(--color-slate-900, #28283D);
+    }
+}
