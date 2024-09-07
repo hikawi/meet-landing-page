@@ -1,0 +1,33 @@
+---
+import { Image } from "astro:assets";
+import NumberingDiv from "../NumberingDiv.astro";
+import MainContentText from "./MainContentText.astro";
+
+import womanInVideoCall from "../../assets/image-woman-in-videocall.jpg";
+import womanVideoChatting from "../../assets/image-women-videochatting.jpg";
+import menInMeeting from "../../assets/image-men-in-meeting.jpg";
+import manTexting from "../../assets/image-man-texting.jpg";
+---
+
+<main
+  class="flex w-full flex-col items-center justify-center p-8 pb-16 md:pt-14 lg:px-20 lg:pb-18 lg:pt-14"
+>
+  <NumberingDiv>01</NumberingDiv>
+  <section
+    class="grid w-full grid-cols-2 place-content-center gap-4 py-16 md:gap-6 lg:w-4/5 xl:grid-cols-4 xl:gap-8"
+  >
+    <Image
+      src={womanInVideoCall}
+      alt="Woman in video call."
+      class="rounded-lg"
+    />
+    <Image
+      src={womanVideoChatting}
+      alt="Women video chatting."
+      class="rounded-lg"
+    />
+    <Image src={menInMeeting} alt="Men in meeting." class="rounded-lg" />
+    <Image src={manTexting} alt="Man texting." class="rounded-lg" />
+  </section>
+  <MainContentText />
+</main>

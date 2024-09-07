@@ -1,0 +1,19 @@
+---
+import PurpleButton from "../buttons/PurpleButton.svelte";
+---
+
+<div
+  class="mx-auto flex w-full flex-col items-center justify-center gap-6 text-center md:w-4/5 xl:flex-row xl:justify-around xl:gap-8 xl:text-left"
+>
+  <h1 class="text-preset-2 text-[2rem] text-white md:text-4xl xl:text-[2.5rem]">
+    Experience more together
+  </h1>
+  <p class="text-preset-4 w-full text-white lg:w-2/3 xl:w-1/2 xl:text-lg">
+    Stay connected with reliable HD meetings and unlimited one-on-one and group
+    video sessions.
+  </p>
+  <PurpleButton client:load>
+    <span> Download </span>
+    <span class="text-purple-300"> v1.3 </span>
+  </PurpleButton>
+</div>

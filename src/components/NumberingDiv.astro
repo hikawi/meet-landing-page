@@ -1,0 +1,14 @@
+---
+interface Props {
+  shift?: boolean;
+}
+
+const { shift } = Astro.props;
+---
+
+<div
+  class="text-preset-5 relative z-10 mt-10 flex size-14 items-center justify-center rounded-full border-2 border-slate-300 bg-white text-slate-600 before:absolute before:left-1/2 before:top-0 before:h-20 before:w-px before:-translate-x-1/2 before:-translate-y-full before:bg-slate-300"
+  class:list={[{ "translate-y-7": shift }]}
+>
+  <slot />
+</div>

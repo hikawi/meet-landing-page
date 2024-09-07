@@ -1,6 +1,8 @@
 ---
 import "../styles/index.css";
 import MeetHeader from "../components/header/MeetHeader.astro";
+import MeetMainContent from "../components/main/MeetMainContent.astro";
+import MeetFooter from "../components/footer/MeetFooter.astro";
 ---
 
 <html lang="en">
@@ -13,6 +15,12 @@ import MeetHeader from "../components/header/MeetHeader.astro";
       name="description"
       content="A landing page for a mock-up app called Meet."
     />
+    <meta name="og:title" content="Meet Landing Page" />
+    <meta
+      name="og:description"
+      content="A landing page for a mock-up app called Meet."
+    />
+    <meta name="og:image" content="/image-footer.desktop.png" />
 
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -24,5 +32,7 @@ import MeetHeader from "../components/header/MeetHeader.astro";
   </head>
   <body class="font-red-hat text-slate-900">
     <MeetHeader />
+    <MeetMainContent />
+    <MeetFooter />
   </body>
 </html>

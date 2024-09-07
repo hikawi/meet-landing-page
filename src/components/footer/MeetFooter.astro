@@ -1,0 +1,37 @@
+---
+import NumberingDiv from "../NumberingDiv.astro";
+import MeetFooterText from "./MeetFooterText.astro";
+---
+
+<footer class="flex w-full flex-col items-center justify-center pt-4">
+  <NumberingDiv shift>02</NumberingDiv>
+  <div class="meet-footer h-fit w-full">
+    <div
+      class="h-full w-full bg-cyan-600 bg-opacity-80 px-8 py-16 xl:px-20 xl:py-28"
+    >
+      <MeetFooterText />
+    </div>
+  </div>
+</footer>
+
+<style>
+  /* I do not know what these do, I copied it from Figma. MDN docs weren't easily understandable */
+  /* What is the lightgray and 50% and / doing lol */
+  div.meet-footer {
+    background: url("/image-footer-mobile.jpg") lightgray 50% / cover no-repeat;
+  }
+
+  @media (min-width: 768px) {
+    div.meet-footer {
+      background: url("/image-footer-tablet.jpg") lightgray 50% / cover
+        no-repeat;
+    }
+  }
+
+  @media (min-width: 1280px) {
+    div.meet-footer {
+      background: url("/image-footer-desktop.jpg") lightgray 50% / cover
+        no-repeat;
+    }
+  }
+</style>

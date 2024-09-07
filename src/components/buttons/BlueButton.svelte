@@ -4,7 +4,7 @@ function goToFrontendMentor() {
 }
 </script>
 
-<button class="py-4 px-10 text-preset-5 bg-cyan-600 rounded-[1.8125rem] hover:bg-opacity-70 text-white w-fit" on:click={goToFrontendMentor}>
+<button class="py-4 px-10 text-preset-5 bg-cyan-600 rounded-[1.8125rem] hover:bg-opacity-70 text-white min-w-fit overflow-visible" on:click={goToFrontendMentor}>
   <slot>
     <span>
     Download
