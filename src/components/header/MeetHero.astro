@@ -1,0 +1,15 @@
+---
+import { Image, Picture } from "astro:assets";
+import heroLeft from "../../assets/image-hero-left.png";
+import heroRight from "../../assets/image-hero-right.png";
+import hero from "../../assets/image-hero.png";
+
+import MeetHeroText from "./MeetHeroText.astro";
+---
+
+<section class="w-full flex flex-col lg:flex-row lg:gap-x-32 gap-y-12 pt-12 pb-8 lg:pb-12 overflow-clip items-center justify-center">
+  <Image src={hero} alt="" class="block scale-110 lg:hidden" />
+  <Image src={heroLeft} alt="" class="hidden lg:block scale-110" />
+  <MeetHeroText />
+  <Image src={heroRight} alt="" class="hidden lg:block scale-110" />
+</section>

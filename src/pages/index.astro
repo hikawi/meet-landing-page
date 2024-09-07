@@ -1,19 +1,28 @@
 ---
 import "../styles/index.css";
+import MeetHeader from "../components/header/MeetHeader.astro";
 ---
 
 <html lang="en">
-	<head>
-		<meta charset="utf-8" />
-		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
-		<meta name="viewport" content="width=device-width" />
+  <head>
+    <meta charset="utf-8" />
+    <link rel="icon" type="image/png" href="/favicon-32x32.png" />
+    <meta name="viewport" content="width=device-width" />
+    <meta name="robots" content="all" />
+    <meta
+      name="description"
+      content="A landing page for a mock-up app called Meet."
+    />
 
-		<link rel="preconnect" href="https://fonts.googleapis.com">
-		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-		<link href="https://fonts.googleapis.com/css2?family=Red+Hat+Display:ital,wght@0,300..900;1,300..900&display=swap" rel="stylesheet">
-		<title>Meet Landing Page</title>
-	</head>
-	<body class="font-red-hat">
-		<h1 class="text-preset-1">Astro</h1>
-	</body>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Red+Hat+Display:ital,wght@0,300..900;1,300..900&display=swap"
+      rel="stylesheet"
+    />
+    <title>Meet Landing Page</title>
+  </head>
+  <body class="font-red-hat text-slate-900">
+    <MeetHeader />
+  </body>
 </html>
